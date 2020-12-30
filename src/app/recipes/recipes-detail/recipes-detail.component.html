@@ -11,10 +11,10 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe <span class="caret"></span></button>
+      <div class="btn-group" appDropdown>
+        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage Recipe <span class="caret"></span></button>
       </div>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <li><a href="#">Add to shopping List</a></li>
         <li><a href="#">Edit Recipe</a></li>
         <li><a href="#">Delete Recipe</a></li>
