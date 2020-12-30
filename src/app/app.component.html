@@ -1,11 +1,10 @@
-<app-header></app-header>
-<h1>{{name}}</h1>
+<app-header (displayFeatureFired)="displaySelectedFeature($event)"></app-header>
 <div class="container">
 <div class="row">
   <div class="col-md-12">
-    <h2>Recipe Book</h2>
+    <h2>{{feature}}</h2>
   </div>
 </div>
-<app-recipes></app-recipes>
-<app-shopping-list></app-shopping-list>
+<app-recipes *ngIf="feature === 'recipe'"></app-recipes>
+<app-shopping-list *ngIf="feature != 'recipe'"></app-shopping-list>
 
